@@ -11,7 +11,7 @@ import { requestGPT } from '@/app/services';
 
 export default function Page() {
     const models: SelectItem[] = [
-        { content: "GPT-4 Turbo", value: "gpt-4-turbo-preview" },
+        { content: "GPT-4 Turbo", value: "gpt-4-turbo" },
         { content: "GPT-4", value: "gpt-4" },
         { content: "GPT-3.5 Turbo", value: "gpt-3.5-turbo" },
     ];
