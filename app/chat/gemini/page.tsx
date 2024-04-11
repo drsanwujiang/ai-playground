@@ -67,19 +67,19 @@ export default function Page() {
             safetySettings: [
                 {
                     category: "HARM_CATEGORY_HATE_SPEECH",
-                    threshold: safetyHateSpeech,
+                    threshold: safetyHateSpeech.value,
                 },
                 {
                     category: "HARM_CATEGORY_SEXUALLY_EXPLICIT",
-                    threshold: safetySexuallyExplicit,
+                    threshold: safetySexuallyExplicit.value,
                 },
                 {
                     category: "HARM_CATEGORY_DANGEROUS_CONTENT",
-                    threshold: safetyDangerousContent,
+                    threshold: safetyDangerousContent.value,
                 },
                 {
                     category: "HARM_CATEGORY_HARASSMENT",
-                    threshold: safetyHarassment,
+                    threshold: safetyHarassment.value,
                 },
             ],
         })

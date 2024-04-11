@@ -105,7 +105,7 @@ export default function Page() {
         requestStableDiffusion(model.value, {
             height: size.height,
             width: size.width,
-            text_prompt: prompts,
+            text_prompts: prompts,
             cfg_scale: scale,
             steps: step,
             sampler: sampler.value,
