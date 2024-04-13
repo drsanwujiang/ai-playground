@@ -162,7 +162,7 @@ export default function Page() {
                         <div className="ml-4 flex flex-col flex-1 h-full">
                             <textarea
                                 className="w-full flex flex-1 p-4 bg-neutral-900 border rounded-lg resize-none focus-within:outline-none"
-                                placeholder="想和文心一言聊点什么？"
+                                placeholder="想和通义千问聊点什么？"
                                 value={prompt}
                                 onChange={e => setPrompt(e.target.value)}
                             />
