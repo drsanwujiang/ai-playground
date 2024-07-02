@@ -12,6 +12,7 @@
     "@headlessui/react": "^1.7.18",
     "@remixicon/react": "^4.2.0",
     "crypto-js": "^4.2.0",
+    "framer-motion": "^11.2.12",
     "next": "14.1.4",
     "react": "^18",
     "react-dom": "^18",
