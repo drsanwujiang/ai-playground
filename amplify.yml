@@ -1,0 +1,26 @@
+version: 1
+frontend:
+  phases:
+    preBuild:
+      commands:
+        - yarn install
+    build:
+      commands:
+        - env | grep -e TOKEN >> .env.production
+        - env | grep -e GPT_API_KEY >> .env.production
+        - env | grep -e GEMINI_API_KEY >> .env.production
+        - env | grep -e CLAUDE_API_KEY >> .env.production
+        - env | grep -e ERNIE_API_KEY >> .env.production
+        - env | grep -e ERNIE_SECRET_KEY >> .env.production
+        - env | grep -e QWEN_API_KEY >> .env.production
+        - env | grep -e DALLE_API_KEY >> .env.production
+        - env | grep -e SD_API_KEY >> .env.production
+        - yarn run build
+  artifacts:
+    baseDirectory: .next
+    files:
+      - '**/*'
+  cache:
+    paths:
+      - node_modules/**/*
+      - .next/cache/**/*
