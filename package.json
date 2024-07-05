@@ -1,6 +1,6 @@
 {
   "name": "ai-playground",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
@@ -9,6 +9,8 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@aws-sdk/client-s3": "^3.609.0",
+    "@aws-sdk/s3-request-presigner": "^3.609.0",
     "@headlessui/react": "^1.7.18",
     "@remixicon/react": "^4.2.0",
     "crypto-js": "^4.2.0",
@@ -16,10 +18,12 @@
     "next": "14.1.4",
     "react": "^18",
     "react-dom": "^18",
+    "react-dropzone": "^14.2.3",
     "sharp": "^0.33.3",
     "tailwind-typewriter": "^1.0.1",
     "tslib": "^2.6.2",
-    "tw-elements": "^2.0.0"
+    "tw-elements": "^2.0.0",
+    "uuid": "^10.0.0"
   },
   "devDependencies": {
     "@tailwindcss/forms": "^0.5.7",
@@ -27,6 +31,7 @@
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
+    "@types/uuid": "^10",
     "autoprefixer": "^10.0.1",
     "eslint": "^8",
     "eslint-config-next": "14.1.4",
