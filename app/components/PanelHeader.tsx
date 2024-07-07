@@ -1,11 +1,11 @@
 import React from 'react';
 
-export default function Header({
-                                 className,
-                                 image,
-                                 title,
-                                 description,
-                               }: Readonly<{
+export default function PanelHeader({
+  className,
+  image,
+  title,
+  description,
+}: Readonly<{
   className?: string;
   image: React.ReactNode;
   title: string;
@@ -18,12 +18,12 @@ export default function Header({
         {image}
       </div>
       <div className="flex flex-col items-center lg:items-start my-auto gap-4">
-                <span className="font-bold text-6xl text-center lg:text-start">
-                    {title}
-                </span>
+        <span className="font-bold text-6xl text-center lg:text-start">
+          {title}
+        </span>
         <span className="text-lg text-center lg:text-start">
-                    {description}
-                </span>
+          {description}
+        </span>
       </div>
     </div>
   );

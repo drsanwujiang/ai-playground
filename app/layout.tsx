@@ -1,11 +1,12 @@
 'use client';
 
 import React, {PropsWithChildren, useContext, useRef} from 'react';
-import {usePathname} from 'next/navigation'
+import {usePathname} from 'next/navigation';
 import {Inter} from 'next/font/google';
 import {LayoutRouterContext} from 'next/dist/shared/lib/app-router-context.shared-runtime';
 import {AnimatePresence, motion} from 'framer-motion';
-import SideBar from '@/app/components/sidebar';
+
+import SideBar from '@/app/components/Sidebar';
 
 import './globals.css';
 

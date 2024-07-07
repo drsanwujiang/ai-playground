@@ -1,13 +1,13 @@
 export default function Slider({
-                                 className,
-                                 name,
-                                 description,
-                                 min,
-                                 max,
-                                 step,
-                                 value,
-                                 setValue,
-                               }: Readonly<{
+  className,
+  name,
+  description,
+  min,
+  max,
+  step,
+  value,
+  setValue,
+}: Readonly<{
   className?: string;
   name?: string;
   description?: string;

@@ -6,11 +6,11 @@ import Image from 'next/image';
 import {RiHomeFill, RiChat1Fill, RiLandscapeFill} from '@remixicon/react'
 
 function SideBarItem({
-                       href,
-                       model,
-                       company,
-                       children,
-                     }: Readonly<{
+  href,
+  model,
+  company,
+  children,
+}: Readonly<{
   href: string;
   model: string;
   company: string;

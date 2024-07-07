@@ -25,12 +25,6 @@ export const getServerSideConfig = () => {
       // Paint
       dall_e: process.env.DALLE_API_KEY || "",
       stable_diffusion: process.env.SD_API_KEY || ""
-    },
-    s3: {
-      region: process.env.S3_REGION || "",
-      bucket: process.env.S3_BUCKET || "",
-      access_key_id: process.env.S3_ACCESS_KEY_ID || "",
-      secret_access_key: process.env.S3_SECRET_ACCESS_KEY || ""
     }
   };
 }

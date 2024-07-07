@@ -8,13 +8,6 @@ export function auth(token: string) {
   });
 }
 
-export function uploadFile(data: FormData) {
-  return fetch("/api/upload", {
-    method: "POST",
-    body: data
-  });
-}
-
 export function requestGPT(data: object) {
   return fetch("/api/chat/gpt", {
     method: "POST",

@@ -2,9 +2,9 @@
 
 import {useState} from 'react';
 import {SHA256} from 'crypto-js';
-import {RiLockUnlockFill} from '@remixicon/react'
+import {RiLockUnlockFill} from '@remixicon/react';
 
-import {auth} from '@/app/services'
+import {auth} from '@/app/services';
 
 export default function Page() {
   const [loading, setLoading] = useState(false);

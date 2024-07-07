@@ -1,12 +1,12 @@
 import {Switch as _Switch} from '@headlessui/react'
 
 export default function Switch({
-                                 className,
-                                 name,
-                                 description,
-                                 selected,
-                                 setSelected,
-                               }: Readonly<{
+  className,
+  name,
+  description,
+  selected,
+  setSelected,
+}: Readonly<{
   className?: string;
   name?: string;
   description?: string;
@@ -22,10 +22,10 @@ export default function Switch({
         checked={selected}
         onChange={setSelected}
       >
-                <span
-                  aria-hidden="true"
-                  className={`${selected ? "translate-x-8 bg-blue-300" : "translate-x-0 bg-gray-300"} pointer-events-none inline-block h-[20px] w-[20px] transform rounded-full shadow-lg ring-0 transition duration-200 ease-in-out`}
-                />
+        <span
+          aria-hidden="true"
+          className={`${selected ? "translate-x-8 bg-blue-300" : "translate-x-0 bg-gray-300"} pointer-events-none inline-block h-[20px] w-[20px] transform rounded-full shadow-lg ring-0 transition duration-200 ease-in-out`}
+        />
       </_Switch>
     </div>
   );

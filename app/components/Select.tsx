@@ -9,13 +9,13 @@ export type SelectItem = {
 };
 
 export default function Select({
-                                 className,
-                                 name,
-                                 description,
-                                 items,
-                                 value,
-                                 setValue,
-                               }: Readonly<{
+  className,
+  name,
+  description,
+  items,
+  value,
+  setValue,
+}: Readonly<{
   className?: string;
   name?: string;
   description?: string;
@@ -31,12 +31,12 @@ export default function Select({
         <div className="relative">
           <Listbox.Button
             className="relative w-full cursor-default border rounded-lg bg-neutral-900 py-2 pl-4 pr-10 text-left shadow-md focus:outline-none focus-visible:border-indigo-500 focus-visible:ring-2 focus-visible:ring-white/75 focus-visible:ring-offset-2 focus-visible:ring-offset-orange-300 sm:text-sm">
-                        <span className="block truncate">
-                            {value.content}
-                        </span>
+            <span className="block truncate">
+              {value.content}
+            </span>
             <span className="pointer-events-none absolute inset-y-0 right-0 flex items-center pr-2">
-                            <RiExpandUpDownLine className="h-5 w-5 text-gray-400" aria-hidden="true"/>
-                        </span>
+              <RiExpandUpDownLine className="h-5 w-5 text-gray-400" aria-hidden="true"/>
+            </span>
           </Listbox.Button>
           <Transition
             as={Fragment}
