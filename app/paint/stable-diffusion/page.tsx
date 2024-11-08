@@ -16,12 +16,15 @@ import {requestStableDiffusion} from '@/app/services';
 export default function Page() {
   const services: SelectItem[] = [
     {content: "Stable Image Ultra", value: "ultra"},
-    {content: "Stable Image Core", value: "core"},
-    {content: "Stable Diffusion 3", value: "sd3"}
+    {content: "Stable Diffusion 3", value: "sd3"},
+    {content: "Stable Image Core", value: "core"}
   ];
   const models: SelectItem[] = [
-    {content: "Stable Diffusion 3 Large Turbo", value: "sd3-large-turbo"},
+    {content: "Stable Diffusion 3.5 Large", value: "sd3.5-large"},
+    {content: "Stable Diffusion 3.5 Large Turbo", value: "sd3.5-large-turbo"},
+    {content: "Stable Diffusion 3.5 Medium", value: "sd3.5-medium"},
     {content: "Stable Diffusion 3 Large", value: "sd3-large"},
+    {content: "Stable Diffusion 3 Large Turbo", value: "sd3-large-turbo"},
     {content: "Stable Diffusion 3 Medium", value: "sd3-medium"}
   ];
   const aspectRatios: SelectItem[] = [
